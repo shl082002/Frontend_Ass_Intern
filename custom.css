@@ -88,9 +88,9 @@ hr {
   font-size: 1.1rem;
   box-shadow: 0 0.4rem 0 0 #000;
   &:hover {
-		transform: translateY(0.3rem);
-		box-shadow: 0 0.2rem 0 0 #000;
-	}
+    transform: translateY(0.3rem);
+    box-shadow: 0 0.2rem 0 0 #000;
+  }
 }
 .option-container {
   margin-top: 3rem;
@@ -117,71 +117,85 @@ hr {
 .option-content {
   display: none;
 }
-@media screen and  (min-width: 600px) and  (max-width: 1200px) {
+.btn-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   .main-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     height: max-content;
   }
-  .acc-body{
+  .acc-body {
     width: 70vw;
   }
-  .subscribe-btn{
+  .subscribe-btn {
     width: 70vw;
   }
-  .option-container{
+  .option-container {
     width: 70vw;
   }
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
   .main-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     height: max-content;
   }
-  .heading-text{
+  .heading-text {
     font-size: 2.5rem;
   }
-  .left-container{
+  .left-container {
     height: 30vh;
   }
-  .quantity-text{
+  .quantity-text {
     font-size: 1.5rem;
     margin-left: 0.5rem;
   }
-  .acc-body{
+  .acc-body {
     width: 90vw;
   }
-  .subscribe-btn{
+  .subscribe-btn {
     width: 90vw;
   }
-  .option-container{
+  .option-container {
     width: 90vw;
   }
 }
 @media screen and (max-width: 450px) {
-  .heading-text{
+  .heading-text {
     font-size: 2rem;
   }
-  .quantity-box{
+  .quantity-box {
     width: 85vw;
+    padding: 0 1rem;
   }
-  .quantity-text{
+  .quantity-text {
     font-size: 1.2rem;
-    margin-left: -1rem;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
   }
-  .quantity-subbox{
+  .quantity-subbox {
     padding: 0 1.4rem;
   }
-  .acc-body{
+  .acc-body {
     width: 85vw;
   }
-  .subscribe-btn{
+  .subscribe-btn {
     width: 85vw;
   }
-  .option-container{
+  .option-container {
     width: 85vw;
+  }
+  .btn-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .options {
+    font-size: 0.9rem;
+  }
+  .option-content{
+    font-size: 0.9rem;
   }
 }
