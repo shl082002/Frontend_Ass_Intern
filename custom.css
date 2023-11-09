@@ -159,3 +159,29 @@ hr {
     width: 90vw;
   }
 }
+@media screen and (max-width: 450px) {
+  .heading-text{
+    font-size: 2rem;
+  }
+  .quantity-box{
+    width: 85vw;
+  }
+  .quantity-text{
+    font-size: 1.2rem;
+    margin-left: -1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .quantity-subbox{
+    padding: 0 1.4rem;
+  }
+  .acc-body{
+    width: 85vw;
+  }
+  .subscribe-btn{
+    width: 85vw;
+  }
+  .option-container{
+    width: 85vw;
+  }
+}
